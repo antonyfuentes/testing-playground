@@ -2,7 +2,7 @@
 This is a dummy wordpress site that is pre-populated with specific plugins, settings and data. To be used as a playground in automation courses.
 
 ## Setup steps
-- `cd` into project root directory
+- `git clone` the repository and `cd` into project root directory
 - restore the db and wp file volumes:
   - `docker run -v dummy_wordpress_db_data:/volume -v $(pwd):/backup --rm loomchild/volume-backup restore automation_db_backup`
   - `docker run -v dummy_wordpress_wp_files:/volume -v $(pwd):/backup --rm loomchild/volume-backup restore automation_wp_files_backup`
