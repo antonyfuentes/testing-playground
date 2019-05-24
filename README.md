@@ -4,8 +4,8 @@ This is a dummy wordpress site that is pre-populated with specific plugins, sett
 ## Setup steps
 - cd into project root directory
 - restore the db and wp file volumes:
--- docker run -v dummy_wordpress_db_data:/volume -v $(pwd):/backup --rm loomchild/volume-backup restore automation_db_backup
--- docker run -v dummy_wordpress_wp_files:/volume -v $(pwd):/backup --rm loomchild/volume-backup restore automation_wp_files_backup
+  - docker run -v dummy_wordpress_db_data:/volume -v $(pwd):/backup --rm loomchild/volume-backup restore automation_db_backup
+  - docker run -v dummy_wordpress_wp_files:/volume -v $(pwd):/backup --rm loomchild/volume-backup restore automation_wp_files_backup
 - Then run: docker-compose up -d
 - Wait until the app runs, and load this in your browser: http://localhost:8000/
 
