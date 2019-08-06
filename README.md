@@ -18,3 +18,7 @@ This is a dummy wordpress site that is pre-populated with specific plugins, sett
 - These are the commands used to create the volume backups:
   - `docker run -v dummy_wordpress_db_data:/volume -v $(pwd):/backup --rm loomchild/volume-backup backup automation_db_backup`
   - `docker run -v dummy_wordpress_wp_files:/volume -v $(pwd):/backup --rm loomchild/volume-backup backup automation_wp_files_backup`
+- Also, if you want to destroy and recreate this just use the commands below:
+  - `docker-compose down --rmi all`
+  - `docker volume prune` (If you delete the containers and images, the volumes will still persist. So this command will delete those dangling volumes)
+  - Note: Use those commands above with caution, you might unintentionally delete other running containers so bear that in mind
