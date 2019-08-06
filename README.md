@@ -23,3 +23,5 @@ This is a dummy wordpress site that is pre-populated with specific plugins, sett
   - `docker-compose down --rmi all`
   - `docker volume prune` (If you delete the containers and images, the volumes will still persist. So this command will delete those dangling volumes)
   
+## Here is an screenshot of how the application looks:
+  ![Dummy Wordpress](https://raw.githubusercontent.com/atfuentess/dummy_wordpress/master/playground.png)
