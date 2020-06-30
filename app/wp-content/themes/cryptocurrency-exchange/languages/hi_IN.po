@@ -1,0 +1,1729 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Clay Premium\n"
+"POT-Creation-Date: 2018-04-03 18:00+0530\n"
+"PO-Revision-Date: 2018-04-03 18:00+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:24 archive.php:17 breadcrumb.php:13 category.php:15 search.php:17
+#: tag.php:16
+msgid "Home"
+msgstr "होम"
+
+#: 404.php:39
+msgid "$daron_big_heading_text"
+msgstr ""
+
+#: 404.php:40
+#, fuzzy
+msgid "$daron_description_text"
+msgstr "कॉलआउट विवरण टेक्स्ट"
+
+#: 404.php:43
+msgid "$daron_big_icon_text"
+msgstr ""
+
+#: archive.php:58 category.php:57 front-page.php:63 index.php:59 page.php:52
+#: search.php:59 single.php:62 tag.php:61
+msgid "By"
+msgstr "द्वारा"
+
+#: archive.php:93 category.php:92 front-page.php:91 index.php:83 search.php:94
+#: tag.php:96
+msgid "Back"
+msgstr "वापस"
+
+#: archive.php:94 category.php:93 front-page.php:92 index.php:84 search.php:95
+#: tag.php:97
+msgid "Next"
+msgstr "आगामी"
+
+#: category.php:11
+msgid "Category Archive"
+msgstr "पोर्टफोलियो श्रेणी"
+
+#: comments.php:14
+msgid "on"
+msgstr "पर"
+
+#: content.php:11
+msgid "| by"
+msgstr "| द्वारा"
+
+#: content.php:12
+msgid "| Posted in"
+msgstr "| प्रकाशित किया गया था"
+
+#: content.php:30 content.php:36
+msgid "Read more"
+msgstr "और पढो"
+
+#: footer.php:26
+msgid "About Clay"
+msgstr "अनीक के बारे में"
+
+#: footer.php:28
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industry standard dummy text ever since the 1500s, "
+"when an unknown printer took a galley."
+msgstr ""
+
+#: footer.php:30
+msgid "Email :"
+msgstr "ईमेल :"
+
+#: footer.php:30
+#, fuzzy
+msgid "example@mymail.com"
+msgstr "mail@example.com"
+
+#: footer.php:31
+msgid "Phone :"
+msgstr "फ़ोन :"
+
+#: footer.php:31
+#, fuzzy
+msgid "(+91) 900-900-900"
+msgstr "(+91) 9000-12345"
+
+#: footer.php:32
+msgid "Address :"
+msgstr "पता :"
+
+#: footer.php:32
+#, fuzzy
+msgid "2021 Lorem Ipsum"
+msgstr "#2021 Lorem Ipsum "
+
+#: footer.php:37
+msgid "Recent Posts"
+msgstr "हाल के पोस्ट"
+
+#: footer.php:40
+msgid "Nulla consequat massa quis enim. Donec pede justo,"
+msgstr ""
+
+#: footer.php:40
+msgid "November 07, 2017"
+msgstr ""
+
+#: footer.php:41
+msgid "Temporibus autem quibusdam"
+msgstr ""
+
+#: footer.php:41
+msgid "November 05, 2017"
+msgstr ""
+
+#: footer.php:42
+msgid ""
+"Cum sociis, you will feel the home of his as the great dis parturient montes "
+msgstr ""
+
+#: footer.php:42
+msgid "November 03, 2017"
+msgstr ""
+
+#: footer.php:43
+msgid "Et voluptates repudiandae "
+msgstr ""
+
+#: footer.php:43
+msgid "November 02, 2017"
+msgstr ""
+
+#: functions.php:185
+msgid "Primary Menu"
+msgstr "प्राथमिक मेनू"
+
+#: header.php:32
+msgid "Phone : "
+msgstr "फ़ोन :"
+
+#: header.php:33
+msgid "Email : "
+msgstr "ईमेल :"
+
+#: header.php:78
+msgid "Toggle navigation"
+msgstr "टॉगल से संचालित करना"
+
+#: include/customizer.php:19
+msgid "Clay Theme Options"
+msgstr "अनीक थीम विकल्प"
+
+#: include/customizer.php:27
+msgid "General Settings"
+msgstr "सामान्य सेटिंग्स"
+
+#: include/customizer.php:41
+msgid "Theme Color"
+msgstr "थीम रंग"
+
+#: include/customizer.php:57
+msgid "Theme Layout"
+msgstr "थीम लेआउट"
+
+#: include/customizer.php:61
+msgid "Wide Layout"
+msgstr "वाइड लेआउट"
+
+#: include/customizer.php:62
+msgid "Box Layout"
+msgstr "बॉक्स लेआउट"
+
+#: include/customizer.php:75
+msgid "Boxed Layout Background Image"
+msgstr "बॉक्स लेआउट पृष्ठभूमि छवि"
+
+#: include/customizer.php:79
+msgid "Crossed Stripes"
+msgstr ""
+
+#: include/customizer.php:80
+msgid "Classy Fabric"
+msgstr ""
+
+#: include/customizer.php:81
+msgid "Low Contrast Linen"
+msgstr ""
+
+#: include/customizer.php:82
+msgid "Wood"
+msgstr ""
+
+#: include/customizer.php:83
+msgid "Diamonds"
+msgstr ""
+
+#: include/customizer.php:84
+msgid "Triangles"
+msgstr ""
+
+#: include/customizer.php:85
+msgid "Black Mamba"
+msgstr ""
+
+#: include/customizer.php:86
+msgid "Vichy"
+msgstr ""
+
+#: include/customizer.php:87
+msgid "Back Pattern"
+msgstr ""
+
+#: include/customizer.php:88
+msgid "Checkered Pattern"
+msgstr ""
+
+#: include/customizer.php:89
+msgid "Diamond Upholstery"
+msgstr ""
+
+#: include/customizer.php:90
+msgid "Lyonnette"
+msgstr ""
+
+#: include/customizer.php:91
+msgid "Graphy"
+msgstr ""
+
+#: include/customizer.php:92
+msgid "Black Thread"
+msgstr ""
+
+#: include/customizer.php:93
+msgid "Subtlenet"
+msgstr ""
+
+#: include/customizer.php:100
+msgid "Header Settings"
+msgstr "हैडर सेटिंग्स"
+
+#: include/customizer.php:113
+msgid "Site Logo"
+msgstr "साइट लोगो"
+
+#: include/customizer.php:114
+msgid "Select the logo type you want display as your site logo."
+msgstr "अपनी साइट लोगो के रूप में प्रदर्शित होने वाला लोगो प्रकार चुनें।"
+
+#: include/customizer.php:118 include/customizer.php:131
+msgid "Text"
+msgstr "टेक्स्ट"
+
+#: include/customizer.php:119 include/customizer.php:149
+msgid "Image"
+msgstr "छवि"
+
+#: include/customizer.php:134
+msgid "Type in the text to set as your site logo."
+msgstr "अपनी साइट का लोगो के रूप में सेट करने के लिए टेक्स्ट में टाइप करें।"
+
+#: include/customizer.php:151
+msgid "Select the image you want display as your site logo."
+msgstr "अपनी साइट लोगो के रूप में प्रदर्शित छवि को चुनें।"
+
+#: include/customizer.php:169
+msgid "Header Max Height (px)"
+msgstr "हैडर अधिकतम ऊंचाई (पिक्सेल)"
+
+#: include/customizer.php:172
+msgid "Header height in pixels. [default: 10]"
+msgstr "पिक्सल में हैडर की ऊंचाई [डिफ़ॉल्ट: 10]"
+
+#: include/customizer.php:180
+msgid "Slider Settings"
+msgstr "स्लाइडर सेटिंग्स"
+
+#: include/customizer.php:181
+msgid "You can add up to 5 images in the slider. "
+msgstr "आप स्लाइडर में 5 छवियों को जोड़ सकते हैं।"
+
+#: include/customizer.php:195
+msgid "Slider Section"
+msgstr "स्लाइडर अनुभाग"
+
+#: include/customizer.php:199 include/customizer.php:585
+#: include/customizer.php:985 include/customizer.php:1259
+msgid "Active"
+msgstr "सक्रिय"
+
+#: include/customizer.php:200 include/customizer.php:586
+#: include/customizer.php:986 include/customizer.php:1260
+msgid "Inactive"
+msgstr "निष्क्रिय"
+
+#: include/customizer.php:212
+msgid "Slider Speed"
+msgstr "स्लाइडर स्पीड"
+
+#: include/customizer.php:215
+msgid "Slider speed in miliseconds. [default: 2500]"
+msgstr "मिलीसेकंड में स्लाइडर की गति। [डिफ़ॉल्ट: 2500]"
+
+#: include/customizer.php:231
+msgid "Slider Autoplay"
+msgstr "स्लाइडर ऑटोप्ले"
+
+#: include/customizer.php:235
+msgid "Enable"
+msgstr "सक्षम करें"
+
+#: include/customizer.php:236
+msgid "Disable"
+msgstr "अक्षम"
+
+#: include/customizer.php:253
+msgid "Slide One"
+msgstr "स्लाइडर एक"
+
+#: include/customizer.php:270
+msgid "Upload your image for the slide one"
+msgstr "स्लाइड के लिए अपनी छवि अपलोड करें"
+
+#: include/customizer.php:290
+msgid "Title for the slide one"
+msgstr "स्लाइड के लिए शीर्षक"
+
+#: include/customizer.php:307 include/customizer.php:413
+#: include/customizer.php:520
+msgid "Slider Description"
+msgstr "स्लाइडर विवरण"
+
+#: include/customizer.php:324 include/customizer.php:430
+#: include/customizer.php:538
+msgid "Button Link"
+msgstr "बटन लिंक"
+
+#: include/customizer.php:341 include/customizer.php:447
+#: include/customizer.php:555
+msgid "Button Text"
+msgstr "बटन टेक्स्ट "
+
+#: include/customizer.php:360
+msgid "Slide Two"
+msgstr "स्लाइडर दो"
+
+#: include/customizer.php:377
+msgid "Upload your image for the slide two"
+msgstr "स्लाइड दो के लिए अपनी छवि अपलोड करें"
+
+#: include/customizer.php:396
+msgid "Title for the slide two"
+msgstr "स्लाइड दो के लिए शीर्षक"
+
+#: include/customizer.php:466
+msgid "Slide Three"
+msgstr "स्लाइडर तीन"
+
+#: include/customizer.php:483
+msgid "Upload your image for the slide three"
+msgstr "स्लाईड तीन के लिए अपनी छवि अपलोड करें"
+
+#: include/customizer.php:503
+msgid "Title for the slide three"
+msgstr "स्लाइड के लिए शीर्षक तीन"
+
+#: include/customizer.php:567
+msgid "Service Settings"
+msgstr "सेवा सेटिंग्स"
+
+#: include/customizer.php:581
+msgid "Service Section"
+msgstr "सेवा अनुभाग"
+
+#: include/customizer.php:599
+msgid "Daron Settings"
+msgstr "डिज़ाइन सेटिंग्स"
+
+#: include/customizer.php:603
+msgid "Layout 1"
+msgstr "लेआउट 1"
+
+#: include/customizer.php:604
+msgid "Layout 2"
+msgstr "लेआउट 2"
+
+#: include/customizer.php:620
+msgid "Column Settings (Only For Desktop)"
+msgstr "कॉलम सेटिंग्स (केवल डेस्कटॉप के लिए)"
+
+#: include/customizer.php:624
+msgid "4 Column"
+msgstr "4 कॉलम"
+
+#: include/customizer.php:625
+msgid "2 Column"
+msgstr "2 कॉलम"
+
+#: include/customizer.php:642
+msgid "Service One"
+msgstr "सर्विस एक"
+
+#: include/customizer.php:660 include/customizer.php:731
+#: include/customizer.php:802 include/customizer.php:873
+msgid "Service Icon"
+msgstr "सेवा चिह्न"
+
+#: include/customizer.php:677 include/customizer.php:748
+#: include/customizer.php:819 include/customizer.php:890
+msgid "Title"
+msgstr "शीर्षक"
+
+#: include/customizer.php:694 include/customizer.php:765
+#: include/customizer.php:836 include/customizer.php:907
+msgid "Description"
+msgstr "विवरण"
+
+#: include/customizer.php:713
+msgid "Service Two"
+msgstr "सर्विस दो"
+
+#: include/customizer.php:784
+msgid "Service Three"
+msgstr "सर्विस तीन"
+
+#: include/customizer.php:855
+msgid "Service Four"
+msgstr "सर्विस चार"
+
+#: include/customizer.php:919
+msgid "Blog Settings"
+msgstr "ब्लॉग सेटिंग"
+
+#: include/customizer.php:920
+msgid "You can change blog page layout and single blog page layout from here."
+msgstr "आप यहां से ब्लॉग पेज लेआउट और एकल ब्लॉग पेज लेआउट बदल सकते हैं।"
+
+#: include/customizer.php:934
+msgid "Blog Page layout"
+msgstr "ब्लॉग पृष्ठ लेआउट"
+
+#: include/customizer.php:938 include/customizer.php:957
+msgid "Left Sidebar"
+msgstr "बाईं साइडबार"
+
+#: include/customizer.php:939 include/customizer.php:958
+msgid "Full width (no sidebar)"
+msgstr "पूर्ण चौड़ाई (कोई साइडबार नहीं)"
+
+#: include/customizer.php:940 include/customizer.php:959
+msgid "Right Sidebar"
+msgstr "दायें साइडबार"
+
+#: include/customizer.php:953
+msgid "Blog Single Page layout"
+msgstr "ब्लॉग एकल पृष्ठ लेआउट"
+
+#: include/customizer.php:966
+msgid "Topbar Settings"
+msgstr "टॉपबार सेटिंग"
+
+#: include/customizer.php:981
+msgid "Topbar Section"
+msgstr "टॉपबार अनुभाग"
+
+#: include/customizer.php:1000
+msgid "Contact Details"
+msgstr "संपर्क विवरण"
+
+#: include/customizer.php:1018
+msgid "Phone"
+msgstr "फ़ोन"
+
+#: include/customizer.php:1036
+msgid "Email"
+msgstr "ईमेल"
+
+#: include/customizer.php:1055
+msgid "Social Media"
+msgstr "सोशल मीडिया"
+
+#: include/customizer.php:1071
+msgid "Disable Facebook link?"
+msgstr "फेसबुक लिंक अक्षम करें?"
+
+#: include/customizer.php:1078 include/customizer.php:1107
+#: include/customizer.php:1136 include/customizer.php:1166
+#: include/customizer.php:1195 include/customizer.php:1225
+msgid "#"
+msgstr ""
+
+#: include/customizer.php:1083
+msgid "Enter your Facebook url."
+msgstr "अपना फेसबुक यूआरएल दर्ज करें"
+
+#: include/customizer.php:1100
+msgid "Disable Twitter link?"
+msgstr "ट्विटर लिंक अक्षम करें?"
+
+#: include/customizer.php:1112
+msgid "Enter your Twitter url."
+msgstr "अपना ट्विटर यूआरएल दर्ज करें"
+
+#: include/customizer.php:1129
+msgid "Disable Google+ link?"
+msgstr "गूगल प्लस  लिंक अक्षम करें?"
+
+#: include/customizer.php:1141
+msgid "Enter your GooglePlus url."
+msgstr "अपना गूगल प्लस यूआरएल दर्ज करें"
+
+#: include/customizer.php:1159
+msgid "Disable Instagram link?"
+msgstr "इंस्टाग्राम लिंक अक्षम करें?"
+
+#: include/customizer.php:1171
+msgid "Enter your Instagram url."
+msgstr "अपना इंस्टाग्राम यूआरएल दर्ज करें"
+
+#: include/customizer.php:1188
+msgid "Disable YouTube link?"
+msgstr "यूट्यूब लिंक अक्षम करें?"
+
+#: include/customizer.php:1200
+msgid "Enter your YouTube url."
+msgstr "कृपया अपना यूट्यूब यूआरएल दर्ज करें।"
+
+#: include/customizer.php:1218
+msgid "Disable RSS link?"
+msgstr "आरएसएस लिंक अक्षम करें?"
+
+#: include/customizer.php:1230
+msgid "Enter your RSS url."
+msgstr "कृपया अपना आरएसएस यूआरएल दर्ज करें।"
+
+#: include/customizer.php:1242
+msgid "Footer Settings"
+msgstr "पाद लेख सेटिंग्स"
+
+#: include/customizer.php:1255
+msgid "Widgets Section"
+msgstr "विजेट अनुभाग"
+
+#: include/customizer.php:1273
+msgid "Footer Social Icons"
+msgstr "पाद लेख सामाजिक प्रतीक"
+
+#: include/customizer.php:1277
+msgid "Show"
+msgstr "प्रदर्शन"
+
+#: include/customizer.php:1278
+msgid "Hide"
+msgstr "छिपाना"
+
+#: include/customizer.php:1291
+msgid "Footer Column Layout"
+msgstr "पाद लेख स्तंभ लेआउट"
+
+#: include/customizer.php:1295
+msgid "One Column"
+msgstr "एक कॉलम"
+
+#: include/customizer.php:1296
+msgid "Two Column"
+msgstr "दो कॉलम"
+
+#: include/customizer.php:1297
+msgid "Three Column"
+msgstr "तीन कॉलम"
+
+#: include/customizer.php:1298
+msgid "Four Column"
+msgstr "चार कॉलम"
+
+#: include/widgets/footer-bottom.php:15
+msgid "| Built using WordPress and Clay Theme"
+msgstr "| WordPress और Clay थीम का उपयोग कर निर्मित"
+
+#: search.php:13
+#, fuzzy
+msgid "Search results for :"
+msgstr "खोज परिणाम:"
+
+#: tag.php:12
+msgid "Tag Archive"
+msgstr "टैग पुरालेख"
+
+#, fuzzy
+#~ msgid "Icon"
+#~ msgstr "चिह्न 1"
+
+#~ msgid "Icon 2"
+#~ msgstr "चिह्न 2"
+
+#~ msgid "Icon 3"
+#~ msgstr "चिह्न 3"
+
+#~ msgid "Icon 4"
+#~ msgstr "चिह्न 4"
+
+#, fuzzy
+#~ msgid "Read More"
+#~ msgstr "और पढो"
+
+#, fuzzy
+#~ msgid "Fast & Effective Solutions"
+#~ msgstr "फ्रंट पेज सक्रिय अनुभाग"
+
+#~ msgid "Email:"
+#~ msgstr "ईमेल: "
+
+#, fuzzy
+#~ msgid "Phone:"
+#~ msgstr "फ़ोन"
+
+#~ msgid "Prev"
+#~ msgstr "पिछला"
+
+#~ msgid "Social Media URLs"
+#~ msgstr "सोशल मीडिया यूआरएल"
+
+#~ msgid "Facebook URL"
+#~ msgstr "फेसबुक युआरएल"
+
+#~ msgid "Please enter your facebook url."
+#~ msgstr "कृपया अपना फेसबुक यूआरएल दर्ज करें"
+
+#~ msgid "Twitter URL"
+#~ msgstr "ट्विटर यूआरएल"
+
+#~ msgid "Please enter your twitter url."
+#~ msgstr "कृपया अपना ट्विटर यूआरएल दर्ज करें"
+
+#~ msgid "Skype URL"
+#~ msgstr "स्काइप यूआरएल"
+
+#~ msgid "Please enter your skype url."
+#~ msgstr "कृपया अपना स्काइप यूआरएल दर्ज करें।"
+
+#~ msgid "Icon Two"
+#~ msgstr "चिह्न दो"
+
+#~ msgid "Icon Three"
+#~ msgstr "चिह्न तीन"
+
+#~ msgid "Icon Four"
+#~ msgstr "चिह्न चार"
+
+#~ msgid "Social Media icons will disappear if you leave it blank."
+#~ msgstr "यदि आप इसे खाली छोड़ देते हैं तो सोशल मीडिया आइकन गायब हो जाएंगे"
+
+#~ msgid "Clay Theme"
+#~ msgstr "अनीक थीम"
+
+#~ msgid "Enter Fact Value"
+#~ msgstr "तथ्य मूल्य दर्ज करें"
+
+#~ msgid "Select Fun Fact Value"
+#~ msgstr "मजेदार तथ्यों का चयन करें"
+
+#~ msgid "Please insert Fact Value."
+#~ msgstr "कृपया मूल्य का मूल्य डालें"
+
+#~ msgid "Enter Client Link URL"
+#~ msgstr "क्लाइंट लिंक यूआरएल दर्ज करें"
+
+#~ msgid "Please insert Client Link URL"
+#~ msgstr "कृपया क्लाइंट लिंक यूआरएल सम्मिलित करें"
+
+#~ msgid "Please insert Client Link URL."
+#~ msgstr "कृपया क्लाइंट लिंक यूआरएल सम्मिलित करें"
+
+#~ msgid "Full Width"
+#~ msgstr "पूर्ण चौड़ाई"
+
+#~ msgid "Protfolio Clients"
+#~ msgstr "पोर्टफोलियो ग्राहक"
+
+#~ msgid "Portfolio Company"
+#~ msgstr "पोर्टफोलियो कंपनी"
+
+#~ msgid "Portfolio Category"
+#~ msgstr "पोर्टफोलियो श्रेणी"
+
+#~ msgid "Portfolio Project URL"
+#~ msgstr "पोर्टफोलियो प्रोजेक्ट यूआरएल "
+
+#~ msgid "Protfolio Images"
+#~ msgstr "पोर्टफोलियो छवियाँ"
+
+#~ msgid "Delete All Images"
+#~ msgstr "सभी छवियां हटाएं"
+
+#~ msgid "Add Image"
+#~ msgstr "छवि जोड़ें"
+
+#~ msgid "Clay Post Format"
+#~ msgstr "अनीक पोस्ट प्रारूप"
+
+#~ msgid "Gallery"
+#~ msgstr "गेलरी"
+
+#~ msgid "Video"
+#~ msgstr "वीडियो"
+
+#~ msgid ""
+#~ "Select the media type you want to show on your post. <span class="
+#~ "\"image_note\">( Note :- In Image Option Featured Image Will Be "
+#~ "Displayed. )</span>"
+#~ msgstr ""
+#~ "वह मीडिया प्रकार चुनें, जिसे आप अपनी पोस्ट पर दिखाना चाहते हैं। <span class="
+#~ "\"image_note\">( ध्यान दें :- छवि विकल्प में छवि प्रदर्शित की जाएगी। )</span>"
+
+#~ msgid "Video Type"
+#~ msgstr "वीडियो प्रकार"
+
+#~ msgid "YouTube"
+#~ msgstr "यूट्यूब"
+
+#~ msgid "Vimeo"
+#~ msgstr "विमेओ"
+
+#~ msgid "Video ID"
+#~ msgstr "वीडियो आईडी"
+
+#~ msgid "Gallery Box"
+#~ msgstr "गैलरी बॉक्स"
+
+#~ msgid "Read More Link Url"
+#~ msgstr "और पढ़ें लिंक यूआरएल"
+
+#~ msgid "Service Button Link"
+#~ msgstr "सेवा बटन लिंक"
+
+#~ msgid "Slider Button Link"
+#~ msgstr "स्लाइडर बटन लिंक"
+
+#~ msgid "Slider Button Text"
+#~ msgstr "स्लाइडर बटन पाठ"
+
+#~ msgid "Slider Button Target (Into New Tab)"
+#~ msgstr "स्लाइडर बटन लक्ष्य (नया टैब में)"
+
+#~ msgid "Icon Link Url"
+#~ msgstr "आइकन लिंक यूआरएल"
+
+#~ msgid "Daronation"
+#~ msgstr "पद"
+
+#~ msgid "Enter Your Testimonial Daronation."
+#~ msgstr "अपना प्रशंसापत्र पदनाम दर्ज करें"
+
+#~ msgid "Testimonial Link"
+#~ msgstr "प्रशंसापत्र लिंक"
+
+#~ msgid "Insert Your Testimonial Link."
+#~ msgstr "अपना प्रशंसापत्र लिंक डालें"
+
+#~ msgid "Testimonial Description"
+#~ msgstr "प्रशंसापत्र विवरण"
+
+#~ msgid "Insert Your Testimonial Description."
+#~ msgstr "अपना प्रशंसापत्र विवरण डालें"
+
+#~ msgid "| by "
+#~ msgstr "| द्वारा"
+
+#~ msgid "Clay Slider"
+#~ msgstr "अनीक स्लाइडर"
+
+#~ msgid "Add Slide"
+#~ msgstr "नई अनीक स्लाइड जोड़ें"
+
+#~ msgid "Add New Clay Slide"
+#~ msgstr "नई अनीक स्लाइड जोड़ें"
+
+#~ msgid "New Clay Slide"
+#~ msgstr "नई अनीक स्लाइड"
+
+#~ msgid "Edit Clay Slide"
+#~ msgstr "अनीक स्लाइड संपादित करें"
+
+#~ msgid "View Clay Slide"
+#~ msgstr "अनीक स्लाइड देखें"
+
+#~ msgid "All Slides"
+#~ msgstr "सभी स्लाइड्स"
+
+#~ msgid "Search Clay Slide"
+#~ msgstr "अनीक स्लाइड खोजें"
+
+#~ msgid "Parent Clay Slide:"
+#~ msgstr "अभिभावक अनीक स्लाइड:"
+
+#~ msgid "No Clay Slide found."
+#~ msgstr "कोई ऐनीक स्लाइड नहीं मिला"
+
+#~ msgid "No Clay Slide found in Trash."
+#~ msgstr "ट्रैश में कोई ऐनीक स्लाइड नहीं मिली"
+
+#~ msgid "Clay Service"
+#~ msgstr "अनीक सेवा"
+
+#~ msgid "Add New Service"
+#~ msgstr "नई अनीक सेवा जोड़ें"
+
+#~ msgid "Add New Clay Service"
+#~ msgstr "नई अनीक सेवा जोड़ें"
+
+#~ msgid "New Clay Service"
+#~ msgstr "नई अनीक सेवा"
+
+#~ msgid "Edit Clay Service"
+#~ msgstr "अनीक सेवा संपादित करें"
+
+#~ msgid "View Clay Service"
+#~ msgstr "अनीक सेवा देखें"
+
+#~ msgid "All Service"
+#~ msgstr "सभी सेवा"
+
+#~ msgid "Search Clay Service"
+#~ msgstr "अन्येक सेवा खोजें"
+
+#~ msgid "Parent Clay Service:"
+#~ msgstr "अभिभावक अनीक सेवा:"
+
+#~ msgid "No Clay Service found."
+#~ msgstr "कोई ऐनीक सेवा नहीं मिली"
+
+#~ msgid "No Clay Service found in Trash."
+#~ msgstr "ट्रैश में कोई ऐनीक सेवा नहीं मिली"
+
+#~ msgid "Clay Funfact"
+#~ msgstr "अनीक फनफैक्ट"
+
+#~ msgid "Add New Funfact"
+#~ msgstr "नई अनीक फनफैक्ट जोड़ें"
+
+#~ msgid "Add New Clay Funfact"
+#~ msgstr "नई अनीक फनफैक्ट जोड़ें"
+
+#~ msgid "New Clay Funfact"
+#~ msgstr "नई अनीक फनफैक्ट"
+
+#~ msgid "Edit Clay Funfact"
+#~ msgstr "अनीक फनफैक्ट संपादित करें"
+
+#~ msgid "View Clay Funfact"
+#~ msgstr "अनीक फनफैक्ट देखें"
+
+#~ msgid "All Funfacts"
+#~ msgstr "सभी फ़िनफ़ैक्स"
+
+#~ msgid "Search Clay Funfacts"
+#~ msgstr "अनीक फनफ़ैक्स खोजें"
+
+#~ msgid "Parent Clay Funfact:"
+#~ msgstr "माता-पिता अनीक फनफैक्ट:"
+
+#~ msgid "No Clay Funfacts found."
+#~ msgstr "कोई ऐनीफ़ फ़िनफ़ैक्स नहीं मिला"
+
+#~ msgid "No Clay Funfacts found in Trash."
+#~ msgstr "कचरा में कोई अनीक का मज़ाकिया नहीं मिला"
+
+#~ msgid "Clay Testimonial"
+#~ msgstr "अनीक प्रशंसापत्र"
+
+#~ msgid "Add New Testimonial"
+#~ msgstr "नई अनीक प्रशंसापत्र जोड़ें"
+
+#~ msgid "Add New Clay Testimonial"
+#~ msgstr "नई अनीक प्रशंसापत्र जोड़ें"
+
+#~ msgid "New Clay Testimonial"
+#~ msgstr "नई अनीक प्रशंसापत्र"
+
+#~ msgid "Edit Clay Testimonial"
+#~ msgstr "अनीक प्रशंसापत्र संपादित करें"
+
+#~ msgid "View Clay Testimonial"
+#~ msgstr "अनीक प्रशंसापत्र देखें"
+
+#~ msgid "All Testimonials"
+#~ msgstr "सभी प्रशंसापत्र"
+
+#~ msgid "Search Clay Testimonials"
+#~ msgstr "अन्येक प्रशंसापत्र खोजें"
+
+#~ msgid "Parent Clay Testimonial:"
+#~ msgstr "अभिभावक अनीक प्रशंसापत्र:"
+
+#~ msgid "No Clay Testimonials found."
+#~ msgstr "कोई अनिक प्रशंसापत्र पाया नहीं"
+
+#~ msgid "No Clay Testimonials found in Trash."
+#~ msgstr "कचरा में कोई अनिक प्रशंसापत्र नहीं मिला"
+
+#~ msgid "Clay Portfolio"
+#~ msgstr "अनीक पोर्टफोलियो"
+
+#~ msgid "Add New Portfolio"
+#~ msgstr "न्यू अनीक पोर्टफोलियो जोड़ें"
+
+#~ msgid "Add New Clay Portfolio"
+#~ msgstr "न्यू अनीक पोर्टफोलियो जोड़ें"
+
+#~ msgid "New Clay Portfolio"
+#~ msgstr "नई अनीक पोर्टफोलियो"
+
+#~ msgid "Edit Clay Portfolio"
+#~ msgstr "एनीक पोर्टफोलियो संपादित करें"
+
+#~ msgid "View Clay Portfolio"
+#~ msgstr "देखें अनीक पोर्टफोलियो"
+
+#~ msgid "All Portfolios"
+#~ msgstr "सभी पोर्टफोलियो"
+
+#~ msgid "Search Clay Portfolios"
+#~ msgstr "एनीक पोर्टफोलियो खोजें"
+
+#~ msgid "Parent Clay Portfolio:"
+#~ msgstr "अभिभावक अनीक पोर्टफोलियो:"
+
+#~ msgid "No Clay Portfolios found."
+#~ msgstr "कोई ऐनीक पोर्टफोलियो नहीं मिला"
+
+#~ msgid "No Clay Portfolios found in Trash."
+#~ msgstr "कचरा में कोई अनीक पोर्टफोलियो नहीं मिला"
+
+#~ msgid "Portfolio Categories"
+#~ msgstr "पोर्टफोलियो श्रेणियाँ"
+
+#~ msgid "Search Portfolio Categories"
+#~ msgstr "पोर्टफोलियो श्रेणियों खोजें"
+
+#~ msgid "All Portfolio Categories"
+#~ msgstr "सभी पोर्टफोलियो श्रेणियाँ"
+
+#~ msgid "Parent Portfolio Category"
+#~ msgstr "अभिभावक पोर्टफोलियो श्रेणी"
+
+#~ msgid "Parent Portfolio Category:"
+#~ msgstr "अभिभावक पोर्टफोलियो श्रेणी"
+
+#~ msgid "Edit Portfolio Category"
+#~ msgstr "पोर्टफोलियो श्रेणी संपादित करें"
+
+#~ msgid "Update Portfolio Category"
+#~ msgstr "पोर्टफोलियो श्रेणी का अद्यतन करें"
+
+#~ msgid "Add New Portfolio Category"
+#~ msgstr "नई पोर्टफ़ोलियो श्रेणी जोड़ें"
+
+#~ msgid "New Portfolio Category Name"
+#~ msgstr "नया पोर्टफोलियो श्रेणी नाम"
+
+#~ msgid "Add Team Member"
+#~ msgstr "नई टीम सदस्य जोड़ें"
+
+#~ msgid "Add New Team Member"
+#~ msgstr "नई टीम सदस्य जोड़ें"
+
+#~ msgid "New Team Member"
+#~ msgstr "नई टीम सदस्य"
+
+#~ msgid "Edit Team Member"
+#~ msgstr "टीम के सदस्य को संपादित करें"
+
+#~ msgid "View Team Member"
+#~ msgstr "टीम के सदस्य देखें"
+
+#~ msgid "All Team Members"
+#~ msgstr "सभी टीम के सदस्य"
+
+#~ msgid "Search Team Member"
+#~ msgstr "सर्च टीम सदस्य"
+
+#~ msgid "Parent Team Member:"
+#~ msgstr "अभिभावक टीम सदस्य:"
+
+#~ msgid "No Team Member found."
+#~ msgstr "कोई टीम सदस्य नहीं मिला"
+
+#~ msgid "No Team Member found in Trash."
+#~ msgstr "ट्रैश में कोई टीम सदस्य नहीं मिला"
+
+#~ msgid "Clay Our Client"
+#~ msgstr "अनीक हमारा ग्राहक"
+
+#~ msgid "Add Our Client"
+#~ msgstr "नया हमारे ग्राहक जोड़ें"
+
+#~ msgid "Add New Our Client"
+#~ msgstr "नया हमारे ग्राहक जोड़ें"
+
+#~ msgid "New Our Client"
+#~ msgstr "नया हमारा ग्राहक"
+
+#~ msgid "Edit Our Client"
+#~ msgstr "हमारे ग्राहक को संपादित करें"
+
+#~ msgid "View Our Client"
+#~ msgstr "हमारे ग्राहक देखें"
+
+#~ msgid "All Our Clients"
+#~ msgstr "हमारे सभी ग्राहक"
+
+#~ msgid "Search Our Client"
+#~ msgstr "हमारे ग्राहक खोजें"
+
+#~ msgid "Parent Our Client:"
+#~ msgstr "अभिभावक हमारे ग्राहक:"
+
+#~ msgid "No Our Client found."
+#~ msgstr "हमारे ग्राहक नहीं मिला"
+
+#~ msgid "No Our Client found in Trash."
+#~ msgstr "कचरा में हमारा कोई ग्राहक नहीं मिला"
+
+#~ msgid "Funfact Settings"
+#~ msgstr "फ़िनफ़ैक्ट सेटिंग्स"
+
+#~ msgid "Testimonials Settings"
+#~ msgstr "प्रशंसापत्र सेटिंग्स"
+
+#~ msgid "Portfolio Settings"
+#~ msgstr "पोर्टफोलियो सेटिंग्स"
+
+#~ msgid "Post Slides"
+#~ msgstr "पोस्ट स्लाइड"
+
+#~ msgid "Team Member"
+#~ msgstr "टीम के सदस्य"
+
+#~ msgid "Our Client"
+#~ msgstr "टीम के सदस्य"
+
+#~ msgid "Page Option"
+#~ msgstr "पृष्ठ विकल्प"
+
+#~ msgid "Save Options"
+#~ msgstr "विकल्प सहेजें"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "डिफॉल्ट्स का पुनःस्थापन"
+
+#~ msgid "404 Heading*"
+#~ msgstr "404 शीर्ष लेख *"
+
+#~ msgid "This text will be shown with big font size below icon"
+#~ msgstr "यह पाठ आइकन के नीचे बड़े फ़ॉन्ट आकार के साथ दिखाया जाएगा"
+
+#~ msgid "404 Description*"
+#~ msgstr "404 विवरण *"
+
+#~ msgid "This text will be appear below the big heading text"
+#~ msgstr "यह पाठ बड़े शीर्ष लेख के नीचे दिखाई देगा"
+
+#~ msgid "This text will be appear below the big icon text"
+#~ msgstr "यह टेक्स्ट बड़ा आइकन पाठ के नीचे दिखाई देगा"
+
+#~ msgid "404 Button Icon*"
+#~ msgstr "404 बटन आइकन *"
+
+#~ msgid "Select icon that appear in top with big size."
+#~ msgstr "बड़ा आकार के साथ शीर्ष पर दिखाई देने वाले आइकन का चयन करें"
+
+#~ msgid "Enter 404 button link here"
+#~ msgstr "404 बटन लिंक यहां दर्ज करें"
+
+#~ msgid "Show / Hide Fun Facts"
+#~ msgstr "मज़ा तथ्य दिखाएँ / छुपाएं"
+
+#~ msgid "Show or Hide skills part into About Us page. "
+#~ msgstr "हमारे बारे में पृष्ठ में कौशल भाग दिखाएँ या छुपाएं।"
+
+#~ msgid "Yes"
+#~ msgstr "हाँ"
+
+#~ msgid "No"
+#~ msgstr "नहीं"
+
+#~ msgid "Show / Hide CallOut Area"
+#~ msgstr "कॉलओट एरिया दिखाएँ / छुपाएं"
+
+#~ msgid "Show or Hide \"CallOut Area\" section into About Us page. "
+#~ msgstr "हमारे बारे में पेज में \\ \"कॉलऑफ एरिया \" अनुभाग को दिखाएँ या छिपाएं"
+
+#~ msgid "Show / Hide Our Team"
+#~ msgstr "हमारी टीम को दिखाना / छुपाएं"
+
+#~ msgid "Show or Hide \"Our Team\" section into About Us page. "
+#~ msgstr "हमारे बारे में पृष्ठ में \\ \"हमारी टीम \" अनुभाग दिखाएं या छिपाएं"
+
+#~ msgid "Blog Section Heading"
+#~ msgstr "ब्लॉग अनुभाग शीर्षक"
+
+#~ msgid "Write your Blog Section Heading."
+#~ msgstr "अपना ब्लॉग अनुभाग शीर्षक लिखें"
+
+#~ msgid "Blog Section Description"
+#~ msgstr "ब्लॉग अनुभाग विवरण"
+
+#~ msgid "Write your Blog Section Description."
+#~ msgstr "अपना ब्लॉग अनुभाग विवरण लिखें"
+
+#~ msgid "Autoplay Blog Posts"
+#~ msgstr "ऑटोप्ले ब्लॉग पोस्ट"
+
+#~ msgid "Blog Posts Slide Interval"
+#~ msgstr "ब्लॉग पोस्ट स्लाइड अंतराल"
+
+#~ msgid "Callout Title"
+#~ msgstr "कॉलआउट शीर्षक"
+
+#~ msgid "Write your callout area title text"
+#~ msgstr "अपना कॉलआउट क्षेत्र शीर्षक पाठ लिखें"
+
+#~ msgid "Write your callout area description text"
+#~ msgstr "अपना कॉलआउट एरिया विवरण टेक्स्ट लिखें"
+
+#~ msgid "Callout Button Text"
+#~ msgstr "कॉलआउट बटन पाठ"
+
+#~ msgid "You can set callout button link"
+#~ msgstr "आप कॉलआउट बटन लिंक सेट कर सकते हैं"
+
+#~ msgid "Callout Button Link"
+#~ msgstr "कॉलआउट बटन लिंक"
+
+#~ msgid "1. Map Settings"
+#~ msgstr "1. मैप सेटिंग्स"
+
+#~ msgid "Insert Map URL"
+#~ msgstr "नक्शा यूआरएल डालें"
+
+#~ msgid "How To Get Google Map URL"
+#~ msgstr "गूगल मानचित्र यूआरएल कैसे प्राप्त करें"
+
+#~ msgid "2. Form Settings"
+#~ msgstr "2. फॉर्म सेटिंग्स"
+
+#~ msgid "Form Label Text"
+#~ msgstr "फ़ॉर्म लेबल पाठ"
+
+#~ msgid "Form Description Text"
+#~ msgstr "प्रपत्र विवरण टेक्स्ट"
+
+#~ msgid "Name Place holder Text"
+#~ msgstr "नाम प्लेसहोल्डर पाठ"
+
+#~ msgid " Last Name Place holder Text"
+#~ msgstr "अंतिम नाम प्लेसहोल्डर पाठ"
+
+#~ msgid "Subject Place holder Text"
+#~ msgstr "विषय प्लेसहोल्डर पाठ"
+
+#~ msgid "Email Place holder Text"
+#~ msgstr "ईमेल प्लेसहोल्डर पाठ"
+
+#~ msgid "Message Place holder Text"
+#~ msgstr "संदेश प्लेसहोल्डर टेक्स्ट"
+
+#~ msgid "3. Contact Info Settings"
+#~ msgstr "3. संपर्क जानकारी सेटिंग्स"
+
+#~ msgid "Contact Label Text"
+#~ msgstr "संपर्क पाठ टेक्स्ट"
+
+#~ msgid "Contact Description Text"
+#~ msgstr "संपर्क विवरण टेक्स्ट"
+
+#~ msgid "Address Label Text"
+#~ msgstr "पता लेबल पाठ"
+
+#~ msgid "Address Label Icon"
+#~ msgstr "पता लेबल आइकन"
+
+#~ msgid "Address Details"
+#~ msgstr "पते का विवरण"
+
+#~ msgid "Phone Label Text"
+#~ msgstr "फोन लेबल पाठ"
+
+#~ msgid "Phone Label Icon"
+#~ msgstr "फोन लेबल आइकन"
+
+#~ msgid "Phone Details"
+#~ msgstr "फ़ोन विवरण"
+
+#~ msgid "Email Label Text"
+#~ msgstr "ईमेल लेबल पाठ"
+
+#~ msgid "Email Label Icon"
+#~ msgstr "ईमेल लेबल आइकन"
+
+#~ msgid "Email Details"
+#~ msgstr "ईमेल विवरण"
+
+#~ msgid "Website Label Text"
+#~ msgstr "वेबसाइट लेबल पाठ"
+
+#~ msgid "Website Label Icon"
+#~ msgstr "वेबसाइट लेबल आइकन"
+
+#~ msgid "Website Details"
+#~ msgstr "वेबसाइट विवरण"
+
+#~ msgid "Icon 2 Title"
+#~ msgstr "चिह्न 2 शीर्षक"
+
+#~ msgid "Icon 3 Title"
+#~ msgstr "चिह्न 3 शीर्षक"
+
+#~ msgid "Icon 4 Title"
+#~ msgstr "चिह्न 4 शीर्षक"
+
+#~ msgid "Icon 5 URL"
+#~ msgstr "चिह्न 5 यूआरएल"
+
+#~ msgid "Icon 5 Title"
+#~ msgstr "चिह्न 5 शीर्षक"
+
+#~ msgid "Icon 6 URL"
+#~ msgstr "चिह्न 6 यूआरएल"
+
+#~ msgid "Icon 6 Title"
+#~ msgstr "चिह्न 6 शीर्षक"
+
+#~ msgid "Icon 7 URL"
+#~ msgstr "चिह्न 7 यूआरएल"
+
+#~ msgid "Icon 7 Title"
+#~ msgstr "चिह्न 7 शीर्षक"
+
+#~ msgid "Icon 8 URL"
+#~ msgstr "चिह्न 8 यूआरएल"
+
+#~ msgid "Icon 8 Title"
+#~ msgstr "चिह्न 8 शीर्षक"
+
+#~ msgid "Icon 9 URL"
+#~ msgstr "चिह्न 9 यूआरएल"
+
+#~ msgid "Icon 9 Title"
+#~ msgstr "चिह्न 9 शीर्षक"
+
+#~ msgid "Icon 10 URL"
+#~ msgstr "चिह्न 10 यूआरएल"
+
+#~ msgid "Icon 10 Title"
+#~ msgstr "चिह्न 10 शीर्षक"
+
+#~ msgid "Icon 11 URL"
+#~ msgstr "चिह्न 11 यूआरएल"
+
+#~ msgid "Icon 11 Title"
+#~ msgstr "चिह्न 11 शीर्षक"
+
+#~ msgid "Clay Font Family*"
+#~ msgstr "अनीक फ़ॉन्ट परिवार *"
+
+#~ msgid "Select font for daron theme"
+#~ msgstr "एनीक थीम के लिए फ़ॉन्ट का चयन करें"
+
+#~ msgid "Font Family"
+#~ msgstr "फ़ॉन्ट परिवार"
+
+#~ msgid "Font Weight & Style"
+#~ msgstr "फ़ॉन्ट वजन और शैली"
+
+#~ msgid "Letter Spacing"
+#~ msgstr "पत्र अंतराल"
+
+#~ msgid "Set letter Spacing."
+#~ msgstr "पत्र अंतर सेट करें"
+
+#~ msgid "Select Footer Column layout View*"
+#~ msgstr "पाद लेख स्तंभ लेआउट का चयन करें देखें *"
+
+#~ msgid "Select or Choose Footer Column layout View for your footer settings."
+#~ msgstr "अपने पाद लेख सेटिंग्स के लिए पाद लेख स्तंभ लेआउट को चुनें ।"
+
+#~ msgid "Show / Hide Footer Bottom Icon"
+#~ msgstr "पाद लेख नीचे आइकन दिखाएं / छिपाएं"
+
+#~ msgid "Show or Hide social icons into footer bottom."
+#~ msgstr "पाद लेख नीचे में सामाजिक चिह्न दिखाएं या छिपाएं"
+
+#~ msgid "Footer Bottom Text"
+#~ msgstr "पाद लेख नीचे का टेक्स्ट"
+
+#~ msgid "Enter footer bottom text."
+#~ msgstr "पाद लेख नीचे टेक्स्ट दर्ज करें"
+
+#~ msgid "Footer Bottom Link Text"
+#~ msgstr "पाद लेख नीचे लिंक पाठ"
+
+#~ msgid "Enter here footer bottom link text."
+#~ msgstr "नीचे पाद लेख नीचे लिंक पाठ दर्ज करें"
+
+#~ msgid "Footer Bottom Link"
+#~ msgstr "पाद लेख नीचे लिंक"
+
+#~ msgid "Enter here footer bottom link."
+#~ msgstr "यहां पादलेख नीचे लिंक दर्ज करें"
+
+#~ msgid "Facts Section Heading"
+#~ msgstr "तथ्यों अनुभाग शीर्षक"
+
+#~ msgid "Write Fun Facts Section Heading."
+#~ msgstr "मजेदार तथ्य लिखें अनुभाग शीर्षक"
+
+#~ msgid "Facts Section Description"
+#~ msgstr "तथ्य अनुभाग विवरण"
+
+#~ msgid "Write Here Fun Facts Section Description."
+#~ msgstr "यहां लिखें मज़ा तथ्य अनुभाग विवरण"
+
+#~ msgid "Fun Facts Column Layout"
+#~ msgstr "मजेदार तथ्य कॉलम लेआउट"
+
+#~ msgid "Select how many columns of Fun Facts you want to show on Homepage."
+#~ msgstr "चुनें मजेदार तथ्यों के कितने कॉलम, जिन्हें आप मुखपृष्ठ पर दिखाना चाहते हैं।"
+
+#~ msgid "Number Of Fun Facts on Homepage"
+#~ msgstr "होमपेज पर मजेदार तथ्यों की संख्या"
+
+#~ msgid "Select how many Number of Fun Facts you want to show on Homepage."
+#~ msgstr "चुनें कि कितनी मजेदार तथ्य आप होमपेज पर दिखाना चाहते हैं।"
+
+#~ msgid "Fun Facts Background Image"
+#~ msgstr "मज़ा तथ्य पृष्ठभूमि छवि"
+
+#~ msgid "Select or upload Fun Facts Background Image."
+#~ msgstr "मज़ा तथ्य पृष्ठभूमि छवि का चयन करें या अपलोड करें।"
+
+#~ msgid "Fact Value Color*"
+#~ msgstr "तथ्य मूल्य का रंग *"
+
+#~ msgid "Custom Color for Fact Value."
+#~ msgstr "वास्तविक मूल्य के लिए कस्टम रंग"
+
+#~ msgid "Fact Title Color*"
+#~ msgstr "तथ्य शीर्षक रंग *"
+
+#~ msgid "Custom Color for Fact Title."
+#~ msgstr "तथ्य शीर्षक के लिए कस्टम रंग"
+
+#~ msgid "Enable Theme Home Page"
+#~ msgstr "थीम होम पेज को सक्षम करें"
+
+#~ msgid "Use On or Off to show home page or custom page."
+#~ msgstr "होम पेज या कस्टम पृष्ठ दिखाने के लिए ऑन या ऑफ़ का उपयोग करें"
+
+#~ msgid ""
+#~ "Custom color for skin. This is color to highlight different elements. "
+#~ "Like text links, active tabs, progress bars, active accordion and others."
+#~ msgstr ""
+#~ "त्वचा के लिए कस्टम रंग यह विभिन्न तत्वों को उजागर करने के लिए रंग है पाठ लिंक, सक्रिय "
+#~ "टैब, प्रगति बार, सक्रिय एॉर्डियन और अन्य की तरह"
+
+#~ msgid "Specify the layout for the pages"
+#~ msgstr "पृष्ठों के लिए लेआउट निर्दिष्ट करें"
+
+#~ msgid "Wide"
+#~ msgstr "चौड़ा"
+
+#~ msgid "Boxed"
+#~ msgstr "डिब्बा"
+
+#~ msgid "Select Your Boxed layout Background Image"
+#~ msgstr "अपने बॉक्सिग लेआउट पृष्ठभूमि छवि का चयन करें"
+
+#~ msgid "Google Analytic Tracking Code "
+#~ msgstr "गूगल विश्लेषणात्मक ट्रैकिंग कोड"
+
+#~ msgid "Write your google analytic section description into Input field."
+#~ msgstr "अपने गूगल विश्लेषणात्मक अनुभाग वर्णन को इनपुट फ़ील्ड में लिखें।"
+
+#~ msgid "Logo type*"
+#~ msgstr "लोगो का प्रकार *"
+
+#~ msgid "Specify the type of logo. It can Text or Image."
+#~ msgstr "लोगो का प्रकार निर्दिष्ट करें | यह पाठ या छवि कर सकते हैं"
+
+#~ msgid "Image Logo"
+#~ msgstr "छवि लोगो"
+
+#~ msgid "Logo Text*"
+#~ msgstr "लोगो पाठ *"
+
+#~ msgid "Logo Image*"
+#~ msgstr "लोगो छवि*"
+
+#~ msgid ""
+#~ "Upload image that will be used as logo for the site <br>NOTE : Upload "
+#~ "Logo \"272x45\" size for Best dimension"
+#~ msgstr ""
+#~ "अपलोड छवि जो साइट के लिए लोगो के रूप में उपयोग की जाएगी <br> नोट: सर्वश्रेष्ठ आयाम "
+#~ "के लिए लोगो  \"272x45 \" आकार अपलोड करें"
+
+#~ msgid "You can set height of header area from here"
+#~ msgstr "आप यहाँ से हैडर क्षेत्र की ऊंचाई निर्धारित कर सकते हैं"
+
+#~ msgid ""
+#~ "You can active and deactive home page layout section by drag and drop."
+#~ msgstr "आप खींचें और ड्रॉप द्वारा सक्रिय और डीएक्टिव होम पेज लेआउट अनुभाग कर सकते हैं"
+
+#~ msgid "Front Page Inactive Sections"
+#~ msgstr "फ्रंट पेज निष्क्रिय अनुभाग"
+
+#~ msgid "Use Below Settings Tabs To Configure Theme Settings"
+#~ msgstr "थीम सेटिंग्स को कॉन्फ़िगर करने के लिए नीचे सेटिंग्स टैब का उपयोग करें"
+
+#~ msgid "General"
+#~ msgstr "सामान्य"
+
+#~ msgid "Font"
+#~ msgstr "फ़ॉन्ट"
+
+#~ msgid "Header"
+#~ msgstr "हैडर"
+
+#~ msgid "Portfolio"
+#~ msgstr "पोर्टफोलियो"
+
+#~ msgid "Fun Facts"
+#~ msgstr "मजेदार तथ्य"
+
+#~ msgid "Testimonial"
+#~ msgstr "प्रशंसापत्र"
+
+#~ msgid "Blog"
+#~ msgstr "ब्लॉग"
+
+#~ msgid "Footer"
+#~ msgstr "पाद लेख"
+
+#~ msgid "404"
+#~ msgstr "404"
+
+#~ msgid "Contact"
+#~ msgstr "संपर्क"
+
+#~ msgid "Callout Area"
+#~ msgstr "कॉलआउट एरिया"
+
+#~ msgid "Font Settings"
+#~ msgstr "फ़ॉन्ट सेटिंग्स"
+
+#~ msgid "Fun Facts Settings"
+#~ msgstr "मजेदार तथ्यों सेटिंग्स"
+
+#~ msgid "Testimonial Settings"
+#~ msgstr "प्रशंसापत्र सेटिंग्स"
+
+#~ msgid "Team member Settings"
+#~ msgstr "टीम सदस्य सेटिंग्स"
+
+#~ msgid "Our Client Settings"
+#~ msgstr "हमारे ग्राहक सेटिंग्स"
+
+#~ msgid "About us Settings"
+#~ msgstr "हमारे बारे में सेटिंग्स"
+
+#~ msgid "404  Settings"
+#~ msgstr "404 सेटिंग्स"
+
+#~ msgid "Callout  Settings"
+#~ msgstr "कॉलआउट सेटिंग"
+
+#~ msgid "Our Client Heading"
+#~ msgstr "हमारे क्लाइंट हेडिंग"
+
+#~ msgid "Input field for Our Client section heading."
+#~ msgstr "हमारे क्लाइंट अनुभाग शीर्षक के लिए इनपुट फ़ील्ड"
+
+#~ msgid "Our Client Section Description"
+#~ msgstr "हमारे ग्राहक अनुभाग विवरण"
+
+#~ msgid "Write your Our Client section description into Input field."
+#~ msgstr "इनपुट फ़ील्ड में अपना ग्राहक अनुभाग विवरण लिखें।"
+
+#~ msgid "Use On or Off button to Autoplay."
+#~ msgstr "ऑटोप्ले पर ऑन या ऑफ बटन का उपयोग करें"
+
+#~ msgid "Number Of Client Show"
+#~ msgstr "क्लाइंट शो की संख्या"
+
+#~ msgid "how many recent client you want to show."
+#~ msgstr "आप कितने हाल के ग्राहक को दिखाना चाहते हैं"
+
+#~ msgid "Title for the front page \"Title\" area. (For front page only)"
+#~ msgstr "सामने पृष्ठ \"शीर्षक\" क्षेत्र के लिए शीर्षक। (केवल मुख पृष्ठ के लिए)"
+
+#~ msgid "Portfolio Items"
+#~ msgstr "पोर्टफोलियो आइटम"
+
+#~ msgid ""
+#~ "Select the number of portfolio items to show on front page. (For front "
+#~ "page only)"
+#~ msgstr ""
+#~ "फ्रंट पेज पर दिखाने के लिए पोर्टफोलियो आइटम की संख्या का चयन करें। (केवल मुख पृष्ठ के "
+#~ "लिए)"
+
+#~ msgid "5 <br> Items"
+#~ msgstr "5 <br> आइटम"
+
+#~ msgid "10 Items"
+#~ msgstr "10 आइटम"
+
+#~ msgid "15 Items"
+#~ msgstr "15 आइटम"
+
+#~ msgid "20 Items"
+#~ msgstr "20 आइटम"
+
+#~ msgid "Show Recent Work Limit"
+#~ msgstr "हाल की कार्य सीमा दिखाएं"
+
+#~ msgid "Select to show the number of recent work in portfolio single page."
+#~ msgstr "पोर्टफोलियो एकल पृष्ठ में हाल के काम की संख्या दिखाने के लिए चयन करें।"
+
+#~ msgid "Service Page Template"
+#~ msgstr "सेवा पृष्ठ टेम्पलेट"
+
+#~ msgid "Select options for service Templates."
+#~ msgstr "सेवा टेम्पलेट्स के लिए विकल्प चुनें।"
+
+#~ msgid "Daron 1 (default)"
+#~ msgstr "डिजाइन 1 (डिफ़ॉल्ट)"
+
+#~ msgid "Daron 2"
+#~ msgstr "डिजाइन 2"
+
+#~ msgid "Service Section Heading"
+#~ msgstr "सेवा अनुभाग शीर्षक"
+
+#~ msgid "Input field for service section heading."
+#~ msgstr "सेवा अनुभाग शीर्षक के लिए इनपुट फ़ील्ड"
+
+#~ msgid "Service Section Description"
+#~ msgstr "सेवा अनुभाग विवरण"
+
+#~ msgid "Write your service section description into Input field."
+#~ msgstr "इनपुट सेवा में अपना सेवा अनुभाग विवरण लिखें।"
+
+#~ msgid "Select how many columns of services you want to show on Homepage."
+#~ msgstr "होमपेज पर आप कितने सेवाओं के कॉलम दिखाना चाहते हैं।"
+
+#~ msgid "Number Of services on Homepage"
+#~ msgstr "होमपेज पर सेवाओं की संख्या"
+
+#~ msgid "Select how many Number of services you want to show on Homepage."
+#~ msgstr "चुनें कि आप होमपेज पर कितनी सेवाओं की संख्या दिखाना चाहते हैं।"
+
+#~ msgid "Read More Text"
+#~ msgstr "अधिक पाठ पढ़ें"
+
+#~ msgid "Write Your service button text here"
+#~ msgstr "अपनी सेवा बटन पाठ यहां लिखें"
+
+#~ msgid "Read More Link"
+#~ msgstr "और पढ़ें लिंक"
+
+#~ msgid "You can choose read more link show and hide"
+#~ msgstr "आप अधिक लिंक शो पढ़ सकते हैं और छिपाना चुन सकते हैं"
+
+#~ msgid "Autoplay Slider"
+#~ msgstr "ऑटोप्ले स्लाइडर"
+
+#~ msgid "Use On or Off button to Autoplay Slider."
+#~ msgstr "ऑटोप्ले स्लाइडर पर चालू या बंद बटन का उपयोग करें"
+
+#~ msgid "Pause On Hover."
+#~ msgstr "हॉवर पर रोकें"
+
+#~ msgid "Use On or Off to Pause slider on hover."
+#~ msgstr "होवर पर स्लाइडर को रोकने के लिए ऑन या ऑफ़ का उपयोग करें"
+
+#~ msgid "Slide show Interval"
+#~ msgstr "स्लाइड शो अंतराल"
+
+#~ msgid "Use Range Slider for Slide show Interval."
+#~ msgstr "स्लाइड शो अंतराल के लिए रेंज स्लाइडर का उपयोग करें"
+
+#~ msgid "Recent slides count"
+#~ msgstr "हाल की स्लाइड गणना"
+
+#~ msgid "how many recent slides you want to show on slider."
+#~ msgstr "स्लाइडर पर आप कितनी हाल की स्लाइड दिखाना चाहते हैं"
+
+#~ msgid "Slider Caption Alignment"
+#~ msgstr "स्लाइडर कैप्शन संरेखण"
+
+#~ msgid "Specify the type of Slider Caption Alignment"
+#~ msgstr "स्लाइडर कैप्शन संरेखण के प्रकार निर्दिष्ट करें"
+
+#~ msgid "Left"
+#~ msgstr "बाएं"
+
+#~ msgid "Center"
+#~ msgstr "केंद्र"
+
+#~ msgid "Right"
+#~ msgstr "दाईं "
+
+#~ msgid "Team Member Heading"
+#~ msgstr "टीम सदस्य हेडिंग"
+
+#~ msgid "Input field for Team Member section heading."
+#~ msgstr "टीम सदस्य अनुभाग शीर्षक के लिए इनपुट फ़ील्ड"
+
+#~ msgid "Team Member Section Description"
+#~ msgstr "टीम सदस्य अनुभाग विवरण"
+
+#~ msgid "Write your Team Member section description into Input field."
+#~ msgstr "इनपुट फील्ड में अपनी टीम का सदस्य अनुभाग वर्णन लिखें।"
+
+#~ msgid "Team Member Column Layout"
+#~ msgstr "टीम के सदस्य कॉलम लेआउट"
+
+#~ msgid ""
+#~ "Select how many columns of Team Members you want to show on Homepage."
+#~ msgstr "चयन करें कि आप अपने होमपेज पर कितने टीम के सदस्य दिखाना चाहते हैं।"
+
+#~ msgid "Number Of Teams Member on Homepage"
+#~ msgstr "होमपेज पर टीम सदस्यों की संख्या"
+
+#~ msgid "Select how many Number of Team Member you want to show on Homepage."
+#~ msgstr "चुनें कि आप कितने टीम सदस्य की संख्या होमपेज पर दिखाना चाहते हैं।"
+
+#~ msgid "Testimonial Section Heading"
+#~ msgstr "प्रशंसापत्र अनुभाग शीर्षक"
+
+#~ msgid "Input field for testimonial section heading."
+#~ msgstr "प्रशंसापत्र अनुभाग शीर्षक के लिए इनपुट फ़ील्ड"
+
+#~ msgid "Testimonial Section Description"
+#~ msgstr "प्रशंसापत्र अनुभाग विवरण"
+
+#~ msgid "Bullets"
+#~ msgstr "बुलेट"
+
+#~ msgid "Select to enable Bullets for testimonial slide."
+#~ msgstr "प्रशंसापत्र स्लाइड के लिए बुलेट सक्षम करने के लिए चयन करें"
+
+#~ msgid "Auto play Testimonial"
+#~ msgstr "ऑटोप्ले प्रशंसापत्र"
+
+#~ msgid "Select to enable Auto play for testimonial slide."
+#~ msgstr "प्रशंसापत्र स्लाइड के लिए ऑटोप्ले सक्षम करने के लिए चयन करें"
+
+#~ msgid "Transitions Slide Speed"
+#~ msgstr "बदलाव स्लाइड गति"
+
+#~ msgid "Set slide changing duration ( Default is 1000)."
+#~ msgstr "स्लाइड बदलने की अवधि सेट करें (डिफ़ॉल्ट 1000 है)।"
+
+#~ msgid "Address"
+#~ msgstr "पता"
+
+#~ msgid "Title:"
+#~ msgstr "शीर्षक:"
+
+#~ msgid "Description:"
+#~ msgstr "विवरण:"
+
+#~ msgid "Phone Number:"
+#~ msgstr "फ़ोन नंबर:"
+
+#~ msgid "E-mail"
+#~ msgstr "ईमेल:"
+
+#~ msgid "Clay Flickr Widget"
+#~ msgstr "अनीक फ़्लिकर विजेट"
+
+#~ msgid "Flickr PhotoStream"
+#~ msgstr "फ़्लिकर फोटोस्ट्रीम"
+
+#~ msgid "Flickr Account ID"
+#~ msgstr "फ़्लिकर खाता आईडी"
+
+#~ msgid "Images Limit"
+#~ msgstr "छवियां सीमाएं"
+
+#~ msgid "Share This Story"
+#~ msgstr "यह कहानी साझा करें"
+
+#~ msgid "Project Descriptions"
+#~ msgstr "परियोजना विवरण"
+
+#~ msgid "Project Details"
+#~ msgstr "परियोजना विवरण"
+
+#~ msgid "Client"
+#~ msgstr "ग्राहक"
+
+#~ msgid "Company"
+#~ msgstr "कंपनी"
+
+#~ msgid "Category"
+#~ msgstr "वर्ग"
+
+#~ msgid "Date"
+#~ msgstr "तारीख"
+
+#~ msgid "Project URL"
+#~ msgstr "प्रोजेक्ट यूआरएल"
+
+#~ msgid "Recent Work"
+#~ msgstr "हाल ही में किया गया कार्य"
