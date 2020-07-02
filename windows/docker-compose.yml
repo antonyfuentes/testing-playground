@@ -39,6 +39,3 @@ services:
     - '8080:80'
     environment:
       PMA_HOST: db
-volumes:
-    db_data: {}
-    wp_files: {}
