@@ -1,2 +1,2 @@
 FROM atfuentess/qa-automation:db_automation
-COPY v_db_data /var/lib/mysql
+COPY data/dump_windows.sql /docker-entrypoint-initdb.d

@@ -16,7 +16,7 @@ services:
    wordpress:
      volumes:
        - ./app:/var/www/html
-       - ./docker/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
+       - ./data/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
      depends_on:
        - db
      image: atfuentess/qa-automation:wordpress_automation
