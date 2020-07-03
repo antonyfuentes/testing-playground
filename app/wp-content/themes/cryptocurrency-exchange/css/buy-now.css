@@ -1,0 +1,87 @@
+.background-box{
+	float: none;
+    border: 1px solid rgba(204, 204, 204, 0.68);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    padding: 8px;
+    overflow: hidden;
+    word-wrap: break-word;
+    background: rgba(255, 255, 255, 0.6);
+}
+.cryptocurrency-btn {
+    margin-top:20px;
+	border:1px solid #29B6F6;
+	padding:8px;
+	background-color:#21ABD6;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	text-decoration: none;
+	font-weight: bold;
+    line-height: 1.8em;
+}
+.cryptocurrency-btn2 {
+    margin-top:11px;
+	border:1px solid #29B6F6;
+	padding:8px;
+	background-color:#21ABD6;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	text-decoration: none;
+	font-weight: bold;
+    line-height: 1.2em;
+}
+.cryptocurrency-btn a,
+.cryptocurrency-btn2 a{
+    color: #fff;
+	text-decoration: none;
+}
+.cryptocurrency-btn:hover{
+    background : #21abd6;
+	border: 1px solid #fff;
+}
+.cryptocurrency-btn2:hover{
+    background : #000;
+}
+.features-btn{ 
+	float: none;
+    border:1px solid #000;
+    box-shadow: 2px 6px 7px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+	margin-top:11px;
+	background-color:#1e1e1ef5;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+}
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/* cryptocurrency theme option css */
+/* #customize-theme-controls #accordion-panel-cryptocurrency_exchange_theme_options .accordion-section-title {
+	background : linear-gradient(50deg, hsla(35, 100%, 67%, 0.69) 20%, #4868f700 40% , rgb(255, 39, 48) 103%);
+	color : #4f4f50;
+}
+#customize-theme-controls #accordion-panel-cryptocurrency_exchange_theme_options .accordion-section-title:hover {
+	background : linear-gradient(45deg, rgba(13, 19, 19) 0%, rgba(0,128,128,1) 40% , rgb(153,218,255,1) 100%);
+	color : white;
+}
+
+
+#customize-theme-controls #accordion-panel-cryptocurrency_exchange_theme_options .accordion-section-title:hover {
+	color:#0073aa;
+    background: #f3f3f5;
+    border-left-color: #0073aa;
+}
+
+ */
