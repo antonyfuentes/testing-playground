@@ -5,7 +5,7 @@ This is a real-world app built with wordpress. This is pre-populated with specif
 - Install docker
 - Download (or clone) this repository
 - Using your terminal cd into the root folder of the project
-- Run this script to run the app on docker: `bash start-app-mac-linux.sh`
+- Run this script to run the app on docker: `sudo bash start-app-mac-linux.sh`
 - Wait for the script to finish running
 - Navigate to [http://localhost:8000/](http://localhost:8000/)
 
