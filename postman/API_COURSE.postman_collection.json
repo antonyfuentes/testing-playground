@@ -1,0 +1,1081 @@
+{
+	"info": {
+		"_postman_id": "b77eb527-6ab4-489f-b40c-2982eb0110ef",
+		"name": "API_COURSE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GRAPHQL",
+			"item": [
+				{
+					"name": "LOGIN",
+					"item": [
+						{
+							"name": "TC-1 [GRAPHQL] LOGIN EMPTY CREDENTIALS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "60659cb1-a7e1-4b81-9e1e-17cb6f0c40ba",
+										"exec": [
+											"// Run some test cases",
+											"pm.test('The login process fails ', function() {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.jsonBody(\"errors\");",
+											"    pm.expect(jsonData.errors[0].message).to.eql(\"empty_username\");",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation{\n  login(input: {\n    clientMutationId: \"1\",\n    username: \"\",\n    password: \"\",\n  }){\n    authToken\n  }\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-2 [GRAPHQL] LOGIN VALID CREDENTIALS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f0130356-841b-46be-ba02-1e15e99e3288",
+										"exec": [
+											"// Run some test cases",
+											"pm.test('The login process is successful', function() {",
+											"    pm.response.to.have.jsonBody(\"data.login.authToken\");",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"// Save the token to use it later on other test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"postman.setEnvironmentVariable(\"token\", responseBody.data.login.authToken);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation{\n  login(input: {\n    clientMutationId: \"1\",\n    username: \"{{apiUserName}}\",\n    password: \"{{apiPassword}}\",\n  }){\n    authToken\n  }\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ACCOUNTS",
+					"item": [
+						{
+							"name": "TC-3 [GRAPHQL] CREATE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c211a4e1-e2fa-4418-90d5-e0543dde673e",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"console.log(responseBody)",
+											"",
+											"pm.test('The new user should be created successfully', function() {",
+											"    pm.expect(responseBody.data.createUser.user.username).to.eql(\"customerGraphql_1\");",
+											"    pm.expect(responseBody.data.createUser.user.email).to.eql(\"customergraphql@demo.com\")",
+											"    pm.expect(responseBody.data.createUser.user.firstName).to.eql(\"GraphqlFirstName\")",
+											"    pm.expect(responseBody.data.createUser.user.lastName).to.eql(\"GraphqlLastName\")",
+											"    pm.expect(responseBody.data.createUser.user.description).to.eql(null);",
+											"    pm.expect(responseBody.data.createUser.user.roles.nodes[0].name).to.eql(\"customer\")",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"// Save the user id to use it later on other test cases",
+											"postman.setEnvironmentVariable(\"newGraphQlUserId\", responseBody.data.createUser.user.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation CREATE_USER($input: CreateUserInput!) {\n  createUser(input: $input) {\n    clientMutationId\n    user {\n      id\n      username\n      email\n      firstName\n      lastName\n      description\n      url\n      registeredDate\n      roles {\n        nodes {\n          name\n        }\n      }\n    }\n  }\n}",
+										"variables": "{\n  \"input\": {\n    \"clientMutationId\": \"CreateUser\",\n    \"username\": \"customerGraphql_1\",\n    \"email\": \"customergraphql@demo.com\",\n    \"firstName\": \"GraphqlFirstName\",\n    \"lastName\": \"GraphqlLastName\",\n    \"password\": \"customerGraphql_1\",\n    \"roles\": \"customer\"\n  }\n}"
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-4 [GRAPHQL] UPDATE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c802d510-c6be-4250-8773-d86584d05092",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The user should be updated successfully', function() {",
+											"    pm.expect(responseBody.data.updateUser.user.username).to.eql(\"customerGraphql_1\");",
+											"    pm.expect(responseBody.data.updateUser.user.email).to.eql(\"updatedcustomergraphql@demo.com\")",
+											"    pm.expect(responseBody.data.updateUser.user.firstName).to.eql(\"Updated First Name\")",
+											"    pm.expect(responseBody.data.updateUser.user.lastName).to.eql(\"Updated Last Name\")",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation UPDATE_USER($input: UpdateUserInput!) {\n  updateUser(input: $input) {\n    user {\n      id\n      username\n      email\n      firstName\n      lastName\n    }\n  }\n}",
+										"variables": "{\n  \"input\": {\n    \"clientMutationId\": \"UpdateUser\",\n    \"id\": \"{{newGraphQlUserId}}\",\n    \"email\": \"updatedcustomergraphql@demo.com\",\n    \"firstName\": \"Updated First Name\",\n    \"lastName\": \"Updated Last Name\"\n  }\n}"
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-5 [GRAPHQL] REMOVE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "897f0da8-0495-4997-9cc9-4c519cebd7fe",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The user should be removed successfully', function() {",
+											"    pm.expect(responseBody.data.deleteUser.deletedId).to.eql(pm.environment.get(\"newGraphQlUserId\"));",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation DELETE_USER($input: DeleteUserInput!) {\n  deleteUser(input: $input) {\n    deletedId\n  }\n}\n",
+										"variables": "{\n  \"input\": {\n    \"clientMutationId\": \"DeleteUser\",\n    \"id\": \"{{newGraphQlUserId}}\"\n  }\n}"
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POSTS",
+					"item": [
+						{
+							"name": "TC-6 [GRAPHQL] CREATE POST CATEGORY",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ec2dca03-0e35-47bb-af49-5d08fb97cad2",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The new Post Category should be created successfully', function() {",
+											"    pm.expect(responseBody.data.createCategory.category.name).to.eql(\"New Category GraphQl \" + pm.environment.get(\"randomNum\"));",
+											"    pm.expect(responseBody.data.createCategory.category.parentDatabaseId).to.eql(null);",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"postman.setEnvironmentVariable(\"newGraphQlCategoryId\", responseBody.data.createCategory.category.id);"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "a73960ed-7d5d-43c3-9acd-5ea81b33c521",
+										"exec": [
+											"postman.setEnvironmentVariable(\"randomNum\", Math.floor(Math.random() * 10000));"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "mutation CREATE_CATEGORY($input: CreateCategoryInput!) {\n  createCategory(input: $input) {\n    category {\n      id\n      databaseId\n      name\n      parentDatabaseId\n    }\n  }\n}",
+										"variables": "{\n  \"input\": {\n    \"clientMutationId\": \"CreateCategory\",\n    \"name\": \"New Category GraphQl {{randomNum}}\"\n  }\n}"
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-7 [GRAPHQL] GET PRODUCT CATEGORIES",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4428d075-c720-4b17-8b89-cbce646b130e",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('There should be a category with name <category_name>', function() {",
+											"    var foundCategory = false;",
+											"    _.each(responseBody.data.categories.edges, (category) => {",
+											"        if (category.node.id == pm.environment.get(\"newGraphQlCategoryId\")) {",
+											"            console.log(\"Category found!!\")",
+											"            foundCategory = true;",
+											"        }",
+											"    })",
+											"    pm.expect(foundCategory).to.be.true;",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "\nquery{\n  categories(where: {parent: 0}){\n    edges {\n      node {\n        id\n        databaseId\n        name\n        parentDatabaseId\n        children {\n          nodes {\n            id\n        \t\tdatabaseId\n        \t\tname\n        \t\tparentDatabaseId\n          }\n        }\n      }\n    }\n  }\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "{{graphqlBaseUrl}}",
+									"host": [
+										"{{graphqlBaseUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d3f9102a-763e-4ff4-90bf-4a3241d343a5",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "c20b45c4-1052-4c60-95e1-6ef9612fa9e2",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "REST",
+			"item": [
+				{
+					"name": "LOGIN",
+					"item": [
+						{
+							"name": "TC-1 [REST] LOGIN EMPTY CREDENTIALS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b43dc6d7-b497-4f6f-84ef-2b6a1d4c9491",
+										"exec": [
+											"// Run some test cases",
+											"pm.test('The login process fails ', function() {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.jsonBody(\"additional_errors\");",
+											"    pm.expect(jsonData.code).to.eql(\"empty_username\");",
+											"    pm.expect(jsonData.message).to.eql(\"<strong>Error</strong>: The username field is empty.\");",
+											"    pm.expect(jsonData.data).to.eql(null);",
+											"    pm.expect(jsonData.additional_errors[0].code).to.eql(\"empty_password\");",
+											"    pm.expect(jsonData.additional_errors[0].message).to.eql(\"<strong>Error</strong>: The password field is empty.\");",
+											"    pm.expect(jsonData.additional_errors[0].data).to.eql(null);",
+											"});",
+											"",
+											"pm.test('The status code should be 500', function() {",
+											"    pm.response.to.have.status(500);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:8000/wp-json/wp/v2/posts/1",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8000",
+									"path": [
+										"wp-json",
+										"wp",
+										"v2",
+										"posts",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-2 [REST] LOGIN VALID CREDENTIALS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8348dafa-5d19-4f2f-a670-93eaf6a2f7cc",
+										"exec": [
+											"// Run some test cases",
+											"pm.test('The login process is successful', function() {",
+											"    var jsonData = pm.response.json();",
+											"    pm.response.to.have.jsonBody(\"id\");",
+											"    pm.expect(jsonData.type).to.eql(\"post\");",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:8000/wp-json/wp/v2/posts/1",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8000",
+									"path": [
+										"wp-json",
+										"wp",
+										"v2",
+										"posts",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ACCOUNTS",
+					"item": [
+						{
+							"name": "TC-3 [REST] CREATE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0a7280d5-3f23-4151-b0a2-542352a52242",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The new user should be created successfully', function() {",
+											"    pm.expect(responseBody.username).to.eql(\"customerRest_1\");",
+											"    pm.expect(responseBody.email).to.eql(\"customerrest@demo.com\")",
+											"    pm.expect(responseBody.first_name).to.eql(\"RestFirstName\")",
+											"    pm.expect(responseBody.last_name).to.eql(\"RestLastName\")",
+											"    pm.expect(responseBody.description).to.eql(\"\");",
+											"    pm.expect(responseBody.roles[0]).to.eql(\"customer\")",
+											"});",
+											"",
+											"pm.test('The status code should be 201', function() {",
+											"    pm.response.to.have.status(201);",
+											"});",
+											"",
+											"// Save the userid to use it later on other test cases",
+											"postman.setEnvironmentVariable(\"newRestUserId\", responseBody.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"customerRest_1\",\n    \"email\": \"customerrest@demo.com\",\n    \"first_name\": \"RestFirstName\",\n    \"last_name\": \"RestLastName\",\n    \"password\": \"customerRest_1\",\n    \"roles\": \"customer\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}wp-json/wp/v2/users",
+									"host": [
+										"{{restBaseUrl}}wp-json"
+									],
+									"path": [
+										"wp",
+										"v2",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-3.2 [REST] CREATE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f7cec2a2-b22b-46ec-9c2b-fd102a7c478c",
+										"exec": [
+											"var responseBody = JSON.parse(responseBody);",
+											"postman.setEnvironmentVariable(\"newRestUserId2\", responseBody.id);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"customerRest_2\",\n    \"email\": \"customerrest2@demo.com\",\n    \"first_name\": \"RestFirstName2\",\n    \"last_name\": \"RestLastName2\",\n    \"password\": \"customerRest_2\",\n    \"roles\": \"customer\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}wp-json/wp/v2/users",
+									"host": [
+										"{{restBaseUrl}}wp-json"
+									],
+									"path": [
+										"wp",
+										"v2",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-4 [REST] UPDATE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0b623c45-4064-480a-9e6c-9fe468d51382",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The user should be updated successfully', function() {",
+											"    pm.expect(responseBody.email).to.eql(\"updatedcustomerrest@demo.com\")",
+											"    pm.expect(responseBody.first_name).to.eql(\"Updated First Name\")",
+											"    pm.expect(responseBody.last_name).to.eql(\"Updated Last Name\")",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"updatedcustomerrest@demo.com\",\n  \"first_name\": \"Updated First Name\",\n  \"last_name\": \"Updated Last Name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}wp-json/wp/v2/users/{{newRestUserId}}",
+									"host": [
+										"{{restBaseUrl}}wp-json"
+									],
+									"path": [
+										"wp",
+										"v2",
+										"users",
+										"{{newRestUserId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-5 [REST] REMOVE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e461a540-80a0-44a5-b70d-120b68ab7238",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The user should be removed successfully', function() {",
+											"    pm.expect(responseBody.previous.id).to.eql(parseInt(pm.environment.get(\"newRestUserId\")));",
+											"    pm.expect(responseBody.deleted).to.eql(true);",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"reassign\": \"{{newRestUserId2}}\",\n    \"force\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}wp-json/wp/v2/users/{{newRestUserId}}",
+									"host": [
+										"{{restBaseUrl}}wp-json"
+									],
+									"path": [
+										"wp",
+										"v2",
+										"users",
+										"{{newRestUserId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-5.2 [REST] REMOVE CUSTOMER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6a79eab4-8be2-4a55-889c-1fd48a236edb",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"reassign\": \"1\",\n    \"force\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}wp-json/wp/v2/users/{{newRestUserId2}}",
+									"host": [
+										"{{restBaseUrl}}wp-json"
+									],
+									"path": [
+										"wp",
+										"v2",
+										"users",
+										"{{newRestUserId2}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "POSTS",
+					"item": [
+						{
+							"name": "TC-6 [REST] CREATE POST CATEGORY",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4d261311-8397-4823-b57e-1f9b40985e3e",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('The new Post Category should be created successfully', function() {",
+											"    pm.expect(responseBody.name).to.eql(\"New Category Rest \" + pm.environment.get(\"randomNum\"));",
+											"    pm.expect(responseBody.parent).to.eql(0);",
+											"    pm.expect(responseBody.taxonomy).to.eql('category');",
+											"});",
+											"",
+											"pm.test('The status code should be 201', function() {",
+											"    pm.response.to.have.status(201);",
+											"});",
+											"",
+											"postman.setEnvironmentVariable(\"newRestCategoryId\", responseBody.id);"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "09379375-764e-4cba-8df2-bdb6424d1e0e",
+										"exec": [
+											"postman.setEnvironmentVariable(\"randomNum\", Math.floor(Math.random() * 10000));"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{apiPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{apiUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\" : \"New Category Rest {{randomNum}}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}/wp-json/wp/v2/categories",
+									"host": [
+										"{{restBaseUrl}}"
+									],
+									"path": [
+										"wp-json",
+										"wp",
+										"v2",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TC-7 [REST] GET PRODUCT CATEGORIES",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f87f962f-708f-490b-b5b0-1f2ee8509a70",
+										"exec": [
+											"// Run some test cases",
+											"var responseBody = JSON.parse(responseBody);",
+											"",
+											"pm.test('There should be a category with name <category_name>', function() {",
+											"    var foundCategory = false;",
+											"    _.each(responseBody, (category) => {",
+											"        console.log(category.id);",
+											"        console.log(pm.environment.get(\"newRestCategoryId\"));",
+											"        if (category.id == pm.environment.get(\"newRestCategoryId\")) {",
+											"            console.log(\"Category found!!\")",
+											"            foundCategory = true;",
+											"        }",
+											"    })",
+											"    pm.expect(foundCategory).to.be.true;",
+											"});",
+											"",
+											"pm.test('The status code should be 200', function() {",
+											"    pm.response.to.have.status(200);",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer {{token}}"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "{{restBaseUrl}}/wp-json/wp/v2/categories",
+									"host": [
+										"{{restBaseUrl}}"
+									],
+									"path": [
+										"wp-json",
+										"wp",
+										"v2",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "948a2ec1-4cfd-48f6-8261-f1825638dcb1",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8ad7bdea-e2a0-4cf7-aed3-6d45b1640374",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
