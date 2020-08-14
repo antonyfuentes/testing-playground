@@ -18,6 +18,21 @@ This is a real-world app built with wordpress. This is pre-populated with specif
 - Wait for the script to finish running
 - Navigate to the URL printed in the terminal
 
+## API Details:
+This app has 3 APIs available that are described below:
+- Wordpress RestAPI:
+  - This API provides different endpoints to execute actions against Wordpress
+  - Endpoint: http://localhost:8000/wp-json/wp/v2/
+  - Documentation: https://developer.wordpress.org/rest-api/reference/
+- Woocommerce RestAPI:
+  - This API provides different endpoints to execute actions against Woocommerce
+  - Endpoint: http://localhost:8000/wp-json/wc/v3/
+  - Documentation: https://woocommerce.github.io/woocommerce-rest-api-docs/?shell#introduction
+- GraphQL: 
+  - This API summarizes mutations and queries that can be performed against Wordpress and Woocommerce
+  - Endpoint: http://localhost:8000/graphql
+  - Playground: http://localhost:8000/wp-admin/admin.php?page=wp-graphiql%2Fwp-graphiql.php
+
 ## Notes:
 - While running the commands above, sometimes docker could get stuck while downloading some image layers. If that is your case, cancel the command with `CTRL + C` and rerun the script again
 - Since this is a dummy site, I'm publicly sharing the following:
