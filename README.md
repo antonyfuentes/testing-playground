@@ -32,6 +32,7 @@ This app has 3 APIs available that are described below:
   - This API summarizes mutations and queries that can be performed against Wordpress and Woocommerce
   - Endpoint: http://localhost:8000/graphql
   - Playground: http://localhost:8000/wp-admin/admin.php?page=wp-graphiql%2Fwp-graphiql.php
+  - Schema file: [app/wp-content/plugins/wp-graphql-develop/schema.graphql](app/wp-content/plugins/wp-graphql-develop/schema.graphql)
 
 ## Notes:
 - While running the commands above, sometimes docker could get stuck while downloading some image layers. If that is your case, cancel the command with `CTRL + C` and rerun the script again
