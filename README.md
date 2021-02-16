@@ -18,7 +18,7 @@ The testing playground project is a real-world app built with WordPress. It is p
 - `cd` into the repository
 - Inside `data/` folder, there is a file called `dump.sql` that dump file was generated on a local environment and is used to run the system using a pre-filled database. The problem with that is that the dump has hardcoded `localhost:8000` in multiple places, which needs to be replaced with the instance's public IP address. To make things simpler, use the `sed` command from below.
 - `sed -i "s/localhost:8000/$PUBLIC_IP:8000/g" data/dump.sql.sql` Note: Make sure of replacing `$PUBLIC_IP` with the corresponding public IP of the instance
-- After the dump is updated, run this script to run the application on Docker: `sudo bash start-app-mac-linux.sh`
+- After the dump is updated, run this script to execute the application on Docker: `sudo bash start-app-mac-linux.sh`
 - Wait for it to finish, and after it ends, wait two more minutes
 - Then in your browser navigate to: [http://public-ip:8000/](http://public-ip:8000/) where `public-ip` should be replaced with the corresponding value
 
